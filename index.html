@@ -5,62 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>정지원 — AI Landing Page Archive</title>
   <meta name="description" content="UX/UI 디자이너 정지원이 AI와 함께 만든 랜딩페이지 아카이브">
-  <meta name="theme-color" content="#0A0A0A">
   <meta property="og:title" content="정지원 — AI Landing Page Archive">
   <meta property="og:description" content="UX/UI 디자이너 정지원이 AI와 함께 만든 랜딩페이지 아카이브">
   <meta property="og:image" content="thumbs/vault.jpg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Geist+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header mono">
-  <a href="./" data-site="name">정지원</a>
-  <nav>
-    <a href="#works">Works</a>
-    <a data-site="github" href="https://github.com/pearlJng" target="_blank" rel="noopener">GitHub ↗</a>
-  </nav>
+<header class="site-header">
+  <div class="site-header__bar">
+    <a class="brand" href="./">
+      <svg class="brand__star" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0 C54 34 66 46 100 50 C66 54 54 66 50 100 C46 66 34 54 0 50 C34 46 46 34 50 0Z" fill="#111"/></svg>
+      <span data-site="name">정지원</span>
+      <small data-site="role">UX/UI Designer</small>
+    </a>
+    <a class="btn" data-site="github" href="https://github.com/pearlJng" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
 </header>
 
 <main>
-  <section class="hero wrap">
-    <div class="hero__top mono">
-      <span>(AI Landing Page Archive)</span>
-      <span data-site="role">UX/UI Designer</span>
+  <section class="intro wrap">
+    <div class="sticker sticker--badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+        <circle cx="100" cy="100" r="96" fill="#fff" stroke="#111" stroke-width="6"/>
+        <text font-family="Pretendard Variable, sans-serif" font-weight="800" font-size="19" letter-spacing="3" fill="#111">
+          <textPath href="#circ">AI LANDING PAGE ✦ ARCHIVE 2026 ✦</textPath>
+        </text>
+      </svg>
+      <b id="badgeCount">00</b>
     </div>
-    <h1 class="hero__title">
-      <span class="line"><span>Selected</span></span>
-      <span class="line"><span>Works<sup id="count">(00)</sup></span></span>
-    </h1>
-    <div class="hero__bottom">
-      <p class="hero__desc">AI와 함께 기획하고 디자인한 랜딩페이지를 한곳에 모았습니다. 프로젝트를 눌러 실제 사이트를 PC와 모바일 화면으로 확인해 보세요.</p>
-      <span class="hero__scroll mono"><i></i>Scroll</span>
-    </div>
+    <svg class="sticker sticker--star" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0 C54 34 66 46 100 50 C66 54 54 66 50 100 C46 66 34 54 0 50 C34 46 46 34 50 0Z" fill="#111"/></svg>
+
+    <p class="intro__eyebrow"><span class="pill pill--dark">✦ AI Landing Page Archive</span></p>
+    <h1 class="intro__title" id="introTitle" data-text="AI L[A]NDING|PAGE ARCH[I]VE">AI Landing Page Archive</h1>
+    <p class="intro__desc">AI와 함께 기획하고 디자인한 랜딩페이지를 한곳에 모았어요. 카드를 눌러 실제 사이트를 PC·모바일 화면으로 구경해 보세요!</p>
   </section>
 
-  <div class="strip" aria-hidden="true"><div class="strip__track" id="strip"></div></div>
+  <div class="ticker" aria-hidden="true"><div class="ticker__track" id="ticker"></div></div>
 
-  <section class="index wrap" id="works" aria-label="프로젝트 목록">
-    <div class="index__head reveal">
-      <h2>Index</h2>
-      <div class="filters" id="filters" role="group" aria-label="업종 필터"></div>
-    </div>
-    <div class="rows" id="rows"></div>
+  <section class="works wrap" id="works" aria-label="프로젝트 목록">
+    <h2 class="sec-title" id="secTitle" data-text="W[O]RKS">Works</h2>
+    <div class="filters" id="filters" role="group" aria-label="업종 필터"></div>
+    <div class="grid" id="grid"></div>
   </section>
 </main>
 
-<footer class="site-footer wrap">
-  <p class="site-footer__big reveal"><a data-site="github" href="https://github.com/pearlJng" target="_blank" rel="noopener">Say hello ↗</a></p>
-  <div class="site-footer__meta mono">
-    <span>© 2026 <span data-site="name">정지원</span></span>
-    <span>Designed with AI, directed by me.</span>
+<footer class="site-footer">
+  <div class="wrap">
+    <h2>Thanks for<br><span class="hollow">looking!</span></h2>
+    <p>새로운 작업이 생기면 계속 채워 나갈게요.</p>
+    <a class="btn" data-site="github" href="https://github.com/pearlJng" target="_blank" rel="noopener">GitHub ↗</a>
+    <div class="site-footer__meta"><span>© 2026 <span data-site="name">정지원</span></span><span>Designed with AI ✦ Directed by me</span></div>
   </div>
 </footer>
-
-<div class="cursor-preview" id="cursorPreview" aria-hidden="true"></div>
 
 <script src="projects.js"></script>
 <script src="app.js"></script>
