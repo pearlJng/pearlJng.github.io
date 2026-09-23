@@ -8,6 +8,7 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   };
+  var THUMB_V = "?v=5"; /* 썸네일을 바꾸면 숫자를 올려주세요 */
   var ICON_DL = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v8M4.5 7L8 10.5 11.5 7M3 13.5h10"/></svg>';
   var ICON_OUT = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h4v4M13 3L7.5 8.5M11 9.5V13H3V5h3.5"/></svg>';
 
@@ -49,7 +50,7 @@
     gallery.innerHTML = P.map(function (p, i) {
       return (
         '<article class="card" data-cat="' + esc(p.category) + '">' +
-          '<div class="card__cover"><img src="' + esc(p.thumb) + '" alt="' + esc(p.name) + ' 첫 화면" loading="' + (i < 6 ? "eager" : "lazy") + '"></div>' +
+          '<div class="card__cover"><img src="' + esc(p.thumb + THUMB_V) + '" alt="' + esc(p.name) + ' 첫 화면" loading="' + (i < 6 ? "eager" : "lazy") + '"></div>' +
           '<div class="card__body">' +
             '<div class="card__row">' +
               '<h3 class="card__title"><small>' + pad(i + 1) + '</small><a href="work.html?id=' + encodeURIComponent(p.id) + '">' + esc(p.name) + "</a></h3>" +
@@ -99,7 +100,7 @@
 
     root.innerHTML =
       '<nav class="crumbs" aria-label="현재 위치"><a href="./">' + esc(S.name || "Home") + '</a><span>/</span><a href="./#works">Works</a><span>/</span><b>' + esc(p.name) + "</b></nav>" +
-      '<div class="cover"><img src="' + esc(p.thumb) + '" alt=""></div>' +
+      '<div class="cover"><img src="' + esc(p.thumb + THUMB_V) + '" alt=""></div>' +
 
       '<header class="w-head">' +
         '<h1 class="head__title">' + esc(p.name) + "</h1>" +
