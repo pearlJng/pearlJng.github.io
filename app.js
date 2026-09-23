@@ -67,7 +67,6 @@
     fillSite();
     bounceText(document.getElementById("introTitle"), 0.1);
     bounceText(document.getElementById("secTitle"), 0);
-    document.getElementById("badgeCount").textContent = pad(P.length);
 
     var grid = document.getElementById("grid");
     var filters = document.getElementById("filters");
@@ -129,7 +128,7 @@
 
     root.innerHTML =
       '<section class="work-head wrap">' +
-        '<div class="work-head__top"><span class="pill pill--dark">No. ' + pad(i + 1) + " / " + pad(P.length) + '</span><span class="pill">' + esc(p.category) + "</span></div>" +
+        '<div class="work-head__top"><a class="btn btn--light" href="./#works">← 목록</a><span class="work-head__tags"><span class="pill pill--dark">No. ' + pad(i + 1) + " / " + pad(P.length) + '</span><span class="pill">' + esc(p.category) + "</span></span></div>" +
         '<h1 class="work-head__title" id="workTitle" data-text="' + esc(p.name) + '">' + esc(p.name) + "</h1>" +
         '<div class="work-head__body">' +
           '<p class="work-head__summary">' + esc(p.summary) + "</p>" +

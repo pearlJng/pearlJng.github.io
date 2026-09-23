@@ -100,14 +100,8 @@ button { font: inherit; letter-spacing: inherit; color: inherit; background: non
 
 /* 스티커 */
 .sticker { position: absolute; z-index: 2; }
-.sticker--badge { right: clamp(8px, 6vw, 96px); top: clamp(24px, 4vw, 56px); width: clamp(96px, 11vw, 140px); height: auto; aspect-ratio: 1; }
-.sticker--badge svg { width: 100%; height: 100%; animation: spin 14s linear infinite; }
-.sticker--badge b {
-  position: absolute; inset: 0; display: grid; place-items: center;
-  font: var(--h2-32-regular); letter-spacing: var(--tracking);
-}
 .sticker--star { left: clamp(4px, 5vw, 80px); bottom: clamp(24px, 4vw, 48px); width: clamp(56px, 6vw, 84px); animation: wobble 3s ease-in-out infinite; }
-@media (max-width: 700px) { .sticker--badge { top: 36px; right: 12px; width: 72px; } .sticker--star { display: none; } }
+@media (max-width: 700px) { .sticker--star { display: none; } }
 
 /* 흐르는 띠 */
 .ticker { background: var(--ink); color: var(--paper); border-block: var(--stroke); overflow: hidden; transform: rotate(-1.5deg); margin: 24px -20px 0; }
@@ -188,6 +182,7 @@ button { font: inherit; letter-spacing: inherit; color: inherit; background: non
    ========================================================= */
 .work-head { padding-block: clamp(48px, 7vw, 96px) clamp(32px, 4vw, 48px); }
 .work-head__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+.work-head__tags { display: flex; gap: 8px; }
 .work-head__title { font: var(--display-160-regular); letter-spacing: var(--tracking); margin: 0; text-transform: uppercase; }
 .work-head__title .ch { display: inline-block; opacity: 0; transform: translateY(-80px) rotate(-12deg); animation: drop .8s var(--bounce) forwards; }
 .work-head__body { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); margin-top: clamp(24px, 4vw, 40px); align-items: start; }
