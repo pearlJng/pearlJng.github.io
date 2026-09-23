@@ -100,7 +100,6 @@
 
     root.innerHTML =
       '<nav class="crumbs" aria-label="현재 위치"><a href="./">' + esc(S.name || "Home") + '</a><span>/</span><a href="./#works">Works</a><span>/</span><b>' + esc(p.name) + "</b></nav>" +
-      '<div class="cover"><img src="' + esc(p.thumb + THUMB_V) + '" alt=""></div>' +
 
       '<header class="w-head">' +
         '<h1 class="head__title">' + esc(p.name) + "</h1>" +
