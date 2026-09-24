@@ -54,7 +54,6 @@
           '<div class="card__body">' +
             '<div class="card__row">' +
               '<h3 class="card__title"><small>' + pad(i + 1) + '</small><a href="work.html?id=' + encodeURIComponent(p.id) + '">' + esc(p.name) + "</a></h3>" +
-              '<a class="icon-btn card__dl" href="' + esc(downloadUrl(p)) + '" title="' + esc(p.name) + ' 파일 다운로드" aria-label="' + esc(p.name) + ' 파일 다운로드">' + ICON_DL + "</a>" +
             "</div>" +
             '<div class="card__meta"><span class="tag">' + esc(p.category) + "</span><span>" + esc(p.date) + "</span></div>" +
           "</div>" +
