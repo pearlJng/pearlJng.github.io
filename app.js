@@ -52,10 +52,8 @@
         '<article class="card" data-cat="' + esc(p.category) + '">' +
           '<div class="card__cover"><img src="' + esc(p.thumb + THUMB_V) + '" alt="' + esc(p.name) + ' 첫 화면" loading="' + (i < 6 ? "eager" : "lazy") + '"></div>' +
           '<div class="card__body">' +
-            '<div class="card__row">' +
-              '<h3 class="card__title"><small>' + pad(i + 1) + '</small><a href="work.html?id=' + encodeURIComponent(p.id) + '">' + esc(p.name) + "</a></h3>" +
-            "</div>" +
-            '<div class="card__meta"><span class="tag">' + esc(p.category) + "</span><span>" + esc(p.date) + "</span></div>" +
+            '<h3 class="card__title"><a href="work.html?id=' + encodeURIComponent(p.id) + '"><span class="card__no">' + pad(i + 1) + "</span>" + esc(p.name) + "</a></h3>" +
+            '<span class="tag">' + esc(p.category) + "</span>" +
           "</div>" +
         "</article>"
       );
