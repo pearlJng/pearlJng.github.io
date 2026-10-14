@@ -148,5 +148,29 @@ window.PROJECTS = [
     colors: ["#0A0A08", "#8C8A82", "#FAFAF8"],
     fonts: ["SF Pro Display", "Pretendard", "SF Mono"],
     tools: []
+    },
+  {
+    id: "applehouse",
+    name: "APPLE HOUSE",
+    category: "F&B",
+    date: "2026.10",
+    summary: "경북 청송에서 3대째 사과를 키우는 과수원. 사과의 일 년을 그림책처럼 넘겨 보는 구성과 손그림 일러스트, 사과 레드로 따뜻한 농가의 이야기를 전달.",
+    url: "https://pearljng.github.io/applehouse/",
+    thumb: "thumbs/applehouse.jpg",
+    colors: ["#C8202F", "#2B1D1A", "#FFF8EE"],
+    fonts: ["Hippie", "문경감홍사과", "Pretendard"],
+    tools: []
+  },
+  {
+    id: "NOBODY_COFFEE",
+    name: "NOBODY COFFEE",
+    category: "F&B",
+    date: "2026.10",
+    summary: "사람이 없어도 매장이 돌아가는 무인카페 가맹 브랜드. 예비 점주의 걱정에 하나씩 답하는 흐름과 점장 캐릭터, 크림·옐로 톤으로 친근한 가맹 모집 페이지를 구성.",
+    url: "https://pearljng.github.io/NOBODY_COFFEE/",
+    thumb: "thumbs/nobody-coffee.jpg",
+    colors: ["#3B1A0D", "#FFC93C", "#FFFBF0"],
+    fonts: ["원스토어 모바일고딕", "여기어때 잘난체", "Pretendard"],
+    tools: []
   }
 ];
